@@ -105,7 +105,7 @@ window-rule {
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
     Mod+Return hotkey-overlay-title="Open a Terminal " { spawn-sh "ghostty +new-window"; }
-    Mod+p hotkey-overlay-title="Run an Application: wofi" { spawn "wofi"; }
+    Mod+p hotkey-overlay-title="Run an Application: wofi" { spawn-sh "wofi"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Super+Alt+S allow-when-locked=true hotkey-overlay-title=null { spawn-sh "pkill orca || exec orca"; }
     Print { spawn-sh "flameshot gui";}
