@@ -1,0 +1,53 @@
+lastupdatecheck: 1743817099
+recentrepos:
+    - /home/aiden/.config
+    - /home/aiden/.config/nvim
+    - /home/aiden/lazygit
+    - /home/aiden/lr
+    - /home/aiden/suckless/dwm
+    - /home/aiden/suckless/st-flexipatch
+    - /home/aiden/suckless/surf
+    - /home/aiden/wallpaper
+    - /home/aiden/suckless/st
+    - /home/aiden/.local/share/omf/themes/cbjohnson
+startuppopupversion: 5
+didshowhunkstaginghint: false
+lastversion: 38dd035e
+customcommandshistory:
+    - tig
+    - q
+hidecommandlog: false
+githubPullRequests:
+    /home/aiden/.config: []
+    /home/aiden/.config/nvim: []
+    /home/aiden/lazygit:
+        - headRefName: master
+          number: 5386
+          title: Make Debian/Ubuntu install command architecture-independent
+          state: MERGED
+          url: https://github.com/jesseduffield/lazygit/pull/5386
+          headRepositoryOwner: discapes
+        - headRefName: master
+          number: 5366
+          title: Change 'Keep file' shortcut from 'k' to 'r' in merge conflict menu
+          state: OPEN
+          url: https://github.com/jesseduffield/lazygit/pull/5366
+          headRepositoryOwner: tusharmurali
+        - headRefName: master
+          number: 5342
+          title: 'feat(config): add skip push hooks'
+          state: OPEN
+          url: https://github.com/jesseduffield/lazygit/pull/5342
+          headRepositoryOwner: osszoi
+        - headRefName: master
+          number: 5329
+          title: Filter files by path in the Files panel
+          state: OPEN
+          url: https://github.com/jesseduffield/lazygit/pull/5329
+          headRepositoryOwner: dufferzafar
+        - headRefName: master
+          number: 5300
+          title: Add external commit message generator support
+          state: OPEN
+          url: https://github.com/jesseduffield/lazygit/pull/5300
+          headRepositoryOwner: Iweisc

@@ -1,0 +1,39 @@
+gui:
+  sidePanelWidth: 0.333 # number from 0 to 1
+  expandFocusedSidePanel: false
+  mainPanelSplitMode: "flexible" # one of 'horizontal' | 'flexible' | 'vertical'
+  language: "auto" # one of 'auto' | 'en' | 'zh' | 'pl' | 'nl' | 'ja' | 'ko'
+  timeFormat: "02 Jan 06 15:04 MST" # https://pkg.go.dev/time#Time.Format
+  showFileTree: false # for rendering changes files in a tree format
+  parseEmoji: true
+  nerdFontsVersion: "3"
+  showBottomLine: false
+  theme:
+    activeBorderColor:
+      - "#8aadf4"
+      - bold
+    inactiveBorderColor:
+      - "#a5adcb"
+    searchingActiveBorderColor:
+      - "#eed49f"
+    optionsTextColor:
+      - "#8aadf4"
+    selectedLineBgColor:
+      - "#363a4f"
+    inactiveViewSelectedLineBgColor:
+      - "#6e738d"
+    cherryPickedCommitFgColor:
+      - "#8aadf4"
+    cherryPickedCommitBgColor:
+      - "#494d64"
+    markedBaseCommitFgColor:
+      - "#8aadf4"
+    markedBaseCommitBgColor:
+      - "#eed49f"
+    unstagedChangesColor:
+      - "#ed8796"
+    defaultFgColor:
+      - "#cad3f5"
+
+  authorColors:
+    "*": "#b7bdf8"
