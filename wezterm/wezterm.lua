@@ -80,17 +80,22 @@ end
 ------------------------------------------------------------
 -- 渲染后端
 ------------------------------------------------------------
--- WebGpu 基于 wgpu, 走 Vulkan / Metal / DX12, 字形缓存与多 pane 重绘优于 OpenGL
--- 若驱动异常或出现花屏, 改为 'OpenGL'
-config.front_end = 'WebGpu'
+-- OpenGL: 兼容性最好, IME 候选窗定位正确
+--
+-- ⚠ 不要用 WebGpu: 它在 Windows 上不上报正确的光标矩形, 导致 IME
+--   候选窗固定不跟随输入框 (实测验证). 相关代码:
+--   window/src/os/windows/window.rs -> set_text_cursor_position()
+--   若将来上游修复, 可改回 'WebGpu' 以获得更好的字形缓存与多 pane 重绘
+config.front_end = 'OpenGL'
 config.max_fps = 120
 config.animation_fps = 60
 
--- Windows 专用: WebGpu 电源偏好
-if is_windows then
-  config.webgpu_power_preference = 'HighPerformance'
-  config.webgpu_force_fallback_adapter = false
-end
+-- Windows 专用
+-- (原 WebGpu 电源偏好已随前端切换而失效, 保留注释以备回退)
+-- if is_windows then
+--   config.webgpu_power_preference = 'HighPerformance'
+--   config.webgpu_force_fallback_adapter = false
+-- end
 
 -- 视觉提示音 (代替系统 beep)
 config.audible_bell = 'Disabled'
